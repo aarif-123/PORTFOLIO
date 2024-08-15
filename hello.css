@@ -1,0 +1,310 @@
+/* Reset some default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.6;
+    color: #fff; /* Change text color to white for contrast */
+    background-color: #000; /* Set background color to black */
+}
+
+/* Header styling */
+header {
+    position: relative;
+    height: 300px; /* Adjust height for better aspect ratio with 1800x1200 image */
+    background: url('image.png') no-repeat center center;
+    background-size: cover;
+    color: #fff;
+    text-align: center;
+    padding: 2rem 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+header h1 {
+    margin-bottom: 0.5rem;
+    font-family: 'Poppins', sans-serif;
+    font-size: 3rem; /* Adjust font size as needed */
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    margin-top: 1rem;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+
+.hero {
+    background: linear-gradient(to right, #000000, #0a4f67);
+    color: #fff;
+    text-align: center;
+    padding: 3rem 1rem;
+    position: relative;
+}
+
+.hero img {
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border: 5px solid #fff;
+    transition: transform 0.3s ease, box-shadow 0.3s ease, filter 0.3s ease; /* Add transition effects */
+}
+
+/* Hover effect on image */
+.hero img:hover {
+    transform: scale(1.1); /* Slightly enlarge the image */
+    box-shadow: 0 8px 16px rgba(210, 31, 31, 0.3); /* Add shadow */
+    filter: brightness(1.2); /* Increase brightness */
+}
+
+.hero h2 {
+    margin-top: 1rem;
+    font-family: 'Poppins', sans-serif;
+}
+
+.hero p {
+    margin-top: 0.5rem;
+    font-family: 'Roboto', sans-serif;
+}
+
+section {
+    padding: 2rem;
+    margin: 1rem 0;
+    background-color: #1a1a1a; /* Dark gray background for sections */
+}
+
+section h2 {
+    border-bottom: 2px solid #007BFF;
+    padding-bottom: 0.5rem;
+    margin-bottom: 1rem;
+    font-family: 'Poppins', sans-serif;
+}
+
+
+ul {
+    list-style-type: disc;
+    margin-left: 2rem;
+}
+/* Smooth Scroll */
+html {
+    scroll-behavior: smooth; /* Enables smooth scrolling for anchor links */
+}
+
+/* Styling for Experience Section */
+#experience {
+    padding: 2rem;
+    margin: 1rem 0;
+    background-color: #1a1a1a;
+    color: #fff;
+    border-radius: 8px;
+    position: relative;
+}
+
+/* Container for Experience Entries */
+.experience-container {
+    display: flex;
+    overflow-x: auto; /* Horizontal scroll for overflow */
+    padding: 1rem;
+    gap: 1rem;
+}
+
+.grid-item {
+    background-color: #333;
+    padding: 1rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    flex: 0 0 auto; /* Prevents shrinking */
+    min-width: 250px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.grid-item:hover {
+    transform: translateY(-10px); /* Lifts the card on hover */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+}
+
+
+
+
+
+./* Contact Section */
+#contact {
+    padding: 2rem;
+    margin: 1rem 0;
+    background-color: #1a1a1a; /* Dark background */
+    color: #fff; /* White text */
+    border-radius: 8px;
+}
+
+#contact h2 {
+    border-bottom: 2px solid #007BFF;
+    padding-bottom: 0.5rem;
+    margin-bottom: 1rem;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Container for contact info and form */
+.contact-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 2rem;
+}
+
+.contact-info {
+    flex: 1;
+    max-width: 45%;
+    background-color: #333; /* Darker background for contact info */
+    padding: 1rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.contact-info a {
+    color: #007BFF;
+    text-decoration: none;
+}
+
+.contact-info a:hover {
+    text-decoration: underline;
+}
+
+/* Styling for the form */
+.contact-form {
+    flex: 1;
+    max-width: 45%;
+    background-color: #444; /* Slightly lighter background */
+    padding: 1.5rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.contact-form h3 {
+    margin-bottom: 1rem;
+    font-family: 'Poppins', sans-serif;
+    color: #fff; /* White text for heading */
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 0.75rem;
+    margin-bottom: 1rem;
+    border: 1px solid #555;
+    border-radius: 4px;
+    background-color: #333; /* Darker background for form fields */
+    color: #fff; /* White text */
+}
+
+.contact-form button {
+    padding: 0.75rem;
+    background-color: #007BFF;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.3s ease;
+}
+
+.contact-form button:hover {
+    background-color: #0056b3;
+}
+
+
+nav ul li a:focus {
+    outline: 2px solid #00BFFF;
+    outline-offset: 2px;
+}
+
+@media (max-width: 768px) {
+    .grid-container {
+        grid-template-columns: 1fr;
+    }
+}
+/* Skills Section */
+#skills {
+    padding: 2rem;
+    margin: 1rem 0;
+    background-color: #1a1a1a; /* Dark gray background for sections */
+}
+
+#skills h2 {
+    border-bottom: 2px solid #007BFF;
+    padding-bottom: 0.5rem;
+    margin-bottom: 1rem;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Container for horizontal scrolling */
+.skills-container {
+    overflow-x: auto;
+    white-space: nowrap;
+    padding: 1rem 0;
+    scroll-behavior: smooth;
+    background-color: #333; /* Dark background for the skills container */
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.5);
+    height: auto;
+}
+
+.skills-content {
+    display: inline-flex;
+}
+
+.skill-item {
+    background-color: #444141;
+    color: #fff;
+    border: 1px solid #444;
+    border-radius: 8px;
+    padding: 1rem 2rem;
+    margin-right: 1rem;
+    box-shadow: 0 4px 8px rgba(94, 90, 90, 0.3);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    font-family: 'Roboto', sans-serif;
+    display: inline-block;
+    height: 60px;
+}
+
+.skill-item:hover {
+    transform: scale(1.1);
+    box-shadow: 0 8px 16px rgba(255, 255, 255, 0.5);
+}
+
+/* Hide scrollbar for webkit browsers */
+.skills-container::-webkit-scrollbar {
+    display: none;
+}
+
+@media (max-width: 768px) {
+    .skills-content {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .skill-item {
+        margin-right: 0;
+        margin-bottom: 1rem;
+    }
+}
