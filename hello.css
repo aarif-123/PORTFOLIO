@@ -1,4 +1,4 @@
-/* Reset some default styles */
+Reset some default styles
 * {
     margin: 0;
     padding: 0;
@@ -306,5 +306,443 @@ nav ul li a:focus {
     .skill-item {
         margin-right: 0;
         margin-bottom: 1rem;
+    }
+}
+
+
+
+@media (max-width: 768px) {
+    header {
+        height: 200px; /* Adjust header height for smaller screens */
+        background-size: cover; /* Ensure background image covers the area */
+    }
+
+    .hero img {
+        width: 120px; /* Smaller image for mobile */
+        height: 120px;
+    }
+
+    .contact-container {
+        flex-direction: column; /* Stack contact info and form on top of each other */
+        align-items: center;
+    }
+
+    .contact-info, .contact-form {
+        max-width: 100%; /* Ensure elements do not overflow */
+        margin-bottom: 1rem;
+    }
+
+    .skills-container {
+        flex-direction: column; /* Stack skill items vertically */
+        align-items: center;
+    }
+
+    .skill-item {
+        margin-right: 0; /* Remove right margin for stacked items */
+        margin-bottom: 1rem;
+    }
+
+    /* Adjust grid layout for smaller screens */
+    .experience-container {
+        flex-direction: column;
+    }
+
+    .grid-item {
+        min-width: 100%; /* Ensure grid items fit the screen width */
+    }
+}
+body {
+    overflow-x: hidden; /* Prevent horizontal scroll */
+}
+
+
+
+
+
+
+
+
+/* Skills Section */
+#skills {
+    padding: 2rem;
+    margin: 1rem 0;
+    background-color: #1a1a1a; /* Dark gray background for sections */
+}
+
+#skills h2 {
+    border-bottom: 2px solid #007BFF;
+    padding-bottom: 0.5rem;
+    margin-bottom: 1rem;
+    font-family: 'Poppins', sans-serif;
+    text-align: center; /* Center the title */
+}
+
+/* Skills container */
+.skills-container {
+    overflow-x: auto;
+    white-space: nowrap;
+    padding: 1rem 0;
+    scroll-behavior: smooth;
+    background-color: #333; /* Dark background for the skills container */
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.5);
+    display: flex;
+    justify-content: center; /* Center the content horizontally */
+    align-items: center; /* Center the content vertically */
+}
+
+.skills-content {
+    display: inline-flex;
+    align-items: center; /* Center skills content vertically */
+}
+
+/* Individual skill items */
+.skill-item {
+    background-color: #444141;
+    color: #fff;
+    border: 1px solid #444;
+    border-radius: 8px;
+    padding: 1rem 2rem;
+    margin-right: 1rem;
+    box-shadow: 0 4px 8px rgba(94, 90, 90, 0.3);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    font-family: 'Roboto', sans-serif;
+    display: inline-block;
+    height: 60px;
+    text-align: center; /* Center text inside skill item */
+}
+
+.skill-item:hover {
+    transform: scale(1.1);
+    box-shadow: 0 8px 16px rgba(255, 255, 255, 0.5);
+}
+
+/* Hide scrollbar for webkit browsers */
+.skills-container::-webkit-scrollbar {
+    display: none;
+}
+
+/* Mobile adjustments */
+@media (max-width: 768px) {
+    .skills-container {
+        padding: 1rem;
+    }
+
+    .skills-content {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .skill-item {
+        margin-right: 0;
+        margin-bottom: 1rem;
+    }
+}
+
+
+
+
+
+/* Navigation styling */
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap; /* Allows wrapping on smaller screens */
+    margin-top: 1rem;
+    padding: 0;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 0.5rem 1rem; /* Added padding for better click area */
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Media query for mobile devices */
+
+
+
+
+
+/* jlkafhldkfjladsjf
+
+
+
+*/
+
+
+/* Media query for mobile devices */
+@media (max-width: 768px) {
+    /* Adjust header styling for mobile */
+    header {
+        height: auto; /* Allow the header height to adjust automatically */
+        padding: 1rem; /* Adjust padding for better spacing */
+        background-position: center top; /* Ensure background image stays centered */
+    }
+
+    /* Adjust the header background image size */
+    header {
+        background-size: cover; /* Ensure the background image covers the area */
+    }
+
+    /* Adjust navigation for mobile */
+    nav ul {
+        flex-direction: column; /* Stack items vertically */
+        align-items: center; /* Center items horizontally */
+        margin-top: 1rem; /* Add space between the header text and the navigation */
+    }
+
+    nav ul li {
+        margin: 5px 0; /* Add vertical spacing between navigation items */
+    }
+
+    /* Adjust the navigation links for mobile */
+    nav ul li a {
+        padding: 0.75rem 1rem; /* Increase padding for better touch targets */
+        font-size: 1rem; /* Adjust font size for readability */
+    }
+}
+
+
+
+
+/* Reset some default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Ensure the body and html do not overflow */
+html, body {
+    overflow-x: hidden; /* Prevent horizontal overflow */
+    overflow-y: auto; /* Allow vertical scrolling */
+    height: 100%; /* Ensure full height */
+}
+
+/* Body styling */
+body {
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.6;
+    color: #fff; /* Change text color to white for contrast */
+    background-color: #000; /* Set background color to black */
+}
+
+/* Header styling */
+header {
+    position: relative;
+    height: 300px; /* Adjust height for better aspect ratio */
+    background: url('image.png') no-repeat center center;
+    background-size: cover;
+    color: #fff;
+    text-align: center;
+    padding: 2rem 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    overflow: hidden; /* Prevent content from overflowing the header */
+}
+
+/* Navigation styling */
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    margin-top: 1rem;
+    padding: 0;
+    overflow: hidden; /* Prevent overflow */
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 0.5rem 1rem; /* Added padding for better click area */
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Media query for mobile devices */
+@media (max-width: 768px) {
+    header {
+        height: auto; /* Adjust header height for mobile */
+        padding: 1rem; /* Adjust padding for better spacing */
+    }
+
+    nav ul {
+        flex-direction: column; /* Stack items vertically */
+        align-items: center; /* Center items horizontally */
+        margin-top: 1rem; /* Add space between the header text and the navigation */
+    }
+
+    nav ul li {
+        margin: 5px 0; /* Add vertical spacing between navigation items */
+    }
+
+    nav ul li a {
+        padding: 0.75rem 1rem; /* Increase padding for better touch targets */
+        font-size: 1rem; /* Adjust font size for readability */
+    }
+}
+
+/* Skills Section */
+#skills {
+    padding: 2rem;
+    margin: 1rem 0;
+    background-color: #1a1a1a; /* Dark gray background for sections */
+}
+
+#skills h2 {
+    border-bottom: 2px solid #007BFF;
+    padding-bottom: 0.5rem;
+    margin-bottom: 1rem;
+    font-family: 'Poppins', sans-serif;
+    text-align: center; /* Center the title */
+}
+
+/* Container for horizontal scrolling */
+.skills-container {
+    overflow-x: auto;
+    white-space: nowrap;
+    padding: 1rem 0;
+    scroll-behavior: smooth;
+    background-color: #333; /* Dark background for the skills container */
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.5);
+    display: flex;
+    justify-content: center; /* Center the content horizontally */
+    align-items: center; /* Center the content vertically */
+}
+
+.skills-content {
+    display: inline-flex;
+    justify-content: center; /* Center skills content */
+}
+
+/* Individual skill items */
+.skill-item {
+    background-color: #444141;
+    color: #fff;
+    border: 1px solid #444;
+    border-radius: 8px;
+    padding: 1rem 2rem;
+    margin-right: 1rem;
+    box-shadow: 0 4px 8px rgba(94, 90, 90, 0.3);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    font-family: 'Roboto', sans-serif;
+    display: inline-block;
+    height: 60px;
+}
+
+.skill-item:hover {
+    transform: scale(1.1);
+    box-shadow: 0 8px 16px rgba(255, 255, 255, 0.5);
+}
+
+/* Hide scrollbar for webkit browsers */
+.skills-container::-webkit-scrollbar {
+    display: none;
+}
+
+/* Mobile adjustments */
+@media (max-width: 768px) {
+    .skills-content {
+        flex-direction: row; /* Keep the skills in a row */
+        justify-content: center; /* Center the skills */
+    }
+
+    .skill-item {
+        margin-right: 1rem; /* Space between items */
+        margin-left: 1rem; /* Ensure center alignment by adding left margin */
+        text-align: center;
+    }
+}
+
+/* Experience Section */
+#experience {
+    padding: 2rem;
+    margin: 1rem 0;
+    background-color: #1a1a1a;
+    color: #fff;
+    border-radius: 8px;
+    position: relative;
+}
+
+.experience-container {
+    display: flex;
+    overflow-x: auto; /* Horizontal scroll for overflow */
+    padding: 1rem;
+    gap: 1rem;
+}
+
+.grid-item {
+    background-color: #333;
+    padding: 1rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    flex: 0 0 auto; /* Prevents shrinking */
+    min-width: 250px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.grid-item:hover {
+    transform: translateY(-10px); /* Lifts the card on hover */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+}
+
+/* Contact Section */
+#contact {
+    padding: 2rem;
+    margin: 1rem 0;
+    background-color: #1a1a1a; /* Dark background */
+    color: #fff; /* White text */
+    border-radius: 8px;
+}
+
+#contact h2 {
+    border-bottom: 2px solid #007BFF;
+    padding-bottom: 0.5rem;
+    margin-bottom: 1rem;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Container for contact info and form */
+.contact-container {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.contact-info,
+.contact-form {
+    width: 100%;
+    max-width: 100%;
+}
+
+@media (min-width: 769px) {
+    .contact-container {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .contact-info,
+    .contact-form {
+        max-width: 45%;
     }
 }
