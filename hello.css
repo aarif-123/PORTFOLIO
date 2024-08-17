@@ -281,6 +281,28 @@ section h2 {
     color: #fff;
 }
 
+#but {
+    font-family: sans-serif;
+    color: #000000; /* Text color */
+    background-color: #2e77c4; /* Button background color */
+    padding: 15px; /* Padding around the button text */
+    margin: 2px; /* Margin outside the button */
+    border: 2px solid black; /* Button border with thickness */
+    border-radius: 10px; /* Rounded corners */
+    cursor: pointer; /* Pointer cursor on hover */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition effects */
+}
+
+/* Hover effect */
+#but:hover {
+    transform: scale(1.1); /* Slightly enlarge the button */
+    box-shadow: 0 8px 16px rgba(255, 255, 255, 0.5); /* Add shadow on hover */
+}
+
+
+
+
+
 /* Mobile adjustments for contact section */
 @media (max-width: 768px) {
     .contact-container {
@@ -295,15 +317,6 @@ section h2 {
     }
 }
 
-#but {
-font-family: sans-serif;
-color: #000000;
-background-color: #2e77c4;
-padding: 15px;
-margin: 2px;
-border: black 5px thick;
-
-}
 
 
 
@@ -357,22 +370,3 @@ border: black 5px thick;
         margin-bottom: 10px; /* Add space between each item */
     }
 }
-
-#but {
-    font-family: sans-serif;
-    color: #000000; /* Text color */
-    background-color: #2e77c4; /* Button background color */
-    padding: 15px; /* Padding around the button text */
-    margin: 2px; /* Margin outside the button */
-    border: 2px solid black; /* Button border with thickness */
-    border-radius: 10px; /* Rounded corners */
-    cursor: pointer; /* Pointer cursor on hover */
-    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition effects */
-}
-
-/* Hover effect */
-#but:hover {
-    transform: scale(1.1); /* Slightly enlarge the button */
-    box-shadow: 0 8px 16px rgba(255, 255, 255, 0.5); /* Add shadow on hover */
-}
-
